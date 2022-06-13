@@ -1,0 +1,40 @@
+
+.main-color{
+    background: white;
+    transition: 0.5s;
+}
+
+.heading-text{
+    color: #162831;
+    transition: 0.5s;
+}
+.slick-dots li button{
+    background: #162831;
+    transition: 0.5s;
+}
+
+.inform-text{
+    color: #162831;;
+    background: #FFFFFF ;
+    transition: 0.5s;
+} 
+
+.about-text{
+    color: #162831;
+    transition: 0.5s;
+}
+
+.about-text_title{
+    color: #162831;
+    transition: 0.5s;
+}
+
+.price-list_elem{
+    color: #162831;
+    transition: 0.5s;
+}
+
+.price-pict_text{
+    color: #162831;
+    transition: 0.5s;
+}

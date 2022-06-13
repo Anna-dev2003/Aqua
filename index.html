@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatherapy</title>
+    <link rel="shortcut icon" href="./img/logo-blue.svg" type="image/svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <!-- styles -->
+    <link rel="stylesheet" href='./style.css'>
+    <link rel="stylesheet" type="text/css" href="./styles/dark-style.css" id="theme-link">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="container header">
+            <div class="logo">
+                <img src="./img/logo-white.svg" alt="">
+            </div>
+            <div class="hamburger1 hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu-overlay">
+                <ul class="nav-ul nav">
+                    <li class="nav_li" >
+                        <a href="" class="ukr">
+                            Головна
+                        </a>
+                        <a href="" class="eng">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav_li" id="sessions">
+                        <a href="" class="ukr">
+                            Сеанси
+                        </a>
+                        <a href="" class="eng">
+                            Sessions
+                        </a>
+                    </li>
+                    <li class="nav_li" id="reviews">
+                        <a href="" class="ukr">
+                            Відгуки
+                        </a>
+                        <a href="" class="eng">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="" class="ukr">
+                            Контакти
+                        </a>
+                        <a href="" class="eng">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="" class="ukr">
+                            Новини
+                        </a>
+                        <a href="" class="eng">
+                            News
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form>
+                <select name="Тема сайту" class="select" id="site-theme">
+                    <option value="dark" class="ukr">
+                        Темна тема
+                    </option>
+                    <option value="dark" class="eng">
+                        Dark theme
+                    </option>
+                    <option value="light" class="ukr">
+                        Світла тема
+                    </option>
+                    <option value="light" class="eng">
+                        Bright theme
+                    </option>
+                </select>
+                <select class="select" name="" id="site-language">
+                    <option value="ukr">
+                        УКР
+                    </option>
+                    <option value="eng">
+                        ENG
+                    </option>
+                </select>
+            </form>
+            <div class="button-cont">
+                <button class="button blue_button button-modal ukr">
+                    Записатись на сеанс
+                </button>
+                <button class="button blue_button button-modal eng">
+                    Sign up for a session
+                </button>
+            </div>
+        </div>  
+
+        <!-- <div class="header">
+            <div class="hamburger1 hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-overlay">
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Reach Us</a></li>
+              </ul>
+            </div>
+          </div> -->
+    </header>
+    <main>
+        <section class="main-color">
+            <div>
+                <div class="main-photo container">
+                    <p class="main-photo_p ukr">
+                        Зміцнення здоров'я
+                    </p>
+                    <p class="main-photo_p eng">
+                        Health promotion
+                    </p>
+                    <h1 class="main-photo_h1 ukr">
+                        Акватерапія <br> RitmStyle
+                    </h1>
+                    <h1 class="main-photo_h1 eng">
+                        Aquatherapy <br> RitmStyle
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-color seans-section">
+            <div id="sessions-section">
+                <p class="heading-text ukr">
+                    Сеанси RitmStyle
+                </p>
+                <p class="heading-text eng">
+                    RitmStyle sessions
+                </p>
+                <div class="seans-ritmstyle-grid container">
+                    <div  class="snip1584">
+                        <div>
+                            <img src="./img/seans-vertically.svg" alt="">
+                            <p class="ukr">
+                                Стандартний RitmStyle
+                            </p>
+                            <p class="eng">
+                                Standard RitmStyle
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="ukr">
+                                Стандартний RitmStyle
+                            </h3>
+                            <h3 class="eng">
+                                Standard RitmStyle
+                            </h3>
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit neque ad magnam aut illo repellendus.
+                            </h5>
+                            <button class="button blue_button button_price ukr">
+                                Дізнатися ціни
+                            </button>
+                            <button class="button blue_button button_price eng">
+                                Find out the prices
+                            </button>
+
+                        </div>
+                    </div> 
+                    <div  class="snip1584">
+                        <div>
+                            <img src="./img/seans-hori.svg" alt="">
+                            <p class="ukr">
+                                RitmStyle для пар
+                            </p>
+                            <p class="eng">
+                                RitmStyle for couples
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="ukr">
+                                RitmStyle для пар
+                            </h3>
+                            <h3 class="eng">
+                                RitmStyle for couples
+                            </h3>
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, assumenda magni. Omnis.
+                            </h5>
+                            <button class="button blue_button button_price ukr">
+                                Дізнатися ціни
+                            </button>
+                            <button class="button blue_button button_price eng">
+                                Find out the prices
+                            </button>
+                        </div>
+                    </div> 
+                    <div  class="snip1584">
+                        <div>
+                            <img src="./img/seans-hori.svg" alt="">
+                            <p class="ukr">
+                                RitmStyle з повним зануренням під воду
+                            </p>
+                            <p class="eng">
+                                RitmStyle with full immersion
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="ukr">
+                                RitmStyle з повним зануренням під воду
+                            </h3>
+                            <h3 class="eng">
+                                RitmStyle with full immersion
+                            </h3>
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio, ex non cupiditate iusto expedita.
+                            </h5>
+                            <button class="button blue_button button_price ukr">
+                                Дізнатися ціни
+                            </button>
+                            <button class="button blue_button button_price eng">
+                                Find out the prices
+                            </button>
+                        </div>
+                    </div> 
+                    <div  class="snip1584">
+                        <div>
+                            <img src="./img/seans-hori.svg" alt="">
+                            <p class="ukr">
+                                RitmStyle для вагітних
+                            </p>
+                            <p class="eng">
+                                RitmStyle for pregnant women
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="ukr">
+                                RitmStyle для вагітних
+                            </h3>
+                            <h3 class="eng">
+                                RitmStyle for pregnant women
+                            </h3>
+                            <h5>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, fugiat consequuntur ducimus nobis reprehenderit nemo odio aliquam ipsam officiis ex natus dolorem 
+                            </h5>
+                            <button class="button blue_button button_price ukr">
+                                Дізнатися ціни
+                            </button>
+                            <button class="button blue_button button_price eng">
+                                Find out the prices
+                            </button>
+                        </div>
+                    </div> 
+                    <div  class="snip1584">
+                        <div>
+                            <img src="./img/seans-hori.svg" alt="">
+                            <p class="ukr">
+                                RitmStyle + барвиста підводна фотосесія
+                            </p>
+                            <p class="eng">
+                                RitmStyle + colorful underwater photo shoot
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="ukr">
+                                RitmStyle + барвиста підводна фотосесія
+                            </h3>
+                            <h3 class="eng">
+                                RitmStyle + colorful underwater photo shoot
+                            </h3>
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </h5>
+                            <button class="button blue_button button_price ukr">
+                                Дізнатися ціни
+                            </button>
+                            <button class="button blue_button button_price eng">
+                                Find out the prices
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class=" main-color slider" id="reviews-section">
+            <div class="slick-container slider container">
+                <p class="heading-text ukr">
+                    Відгуки
+                </p>
+                <p class="heading-text eng">
+                    Reviews
+                </p>
+                <div class="comments-slider">
+                    <div class="comment">
+                        <h6>
+                            Name
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae ut ipsa, quibusdam doloribus doloremque labore 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h6>
+                            Name
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h6>
+                            Name
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae ut ipsa, quibusdam doloribus doloremque labore rem reiciendis deserunt quidem 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h6>
+                            Name
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h6>
+                            Name
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae ut ipsa, quibusdam doloribus doloremque 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="parallax-window">
+                <div class="inform-background">
+                    <div class="inform-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptates aspernatur doloremque ipsum earum dolor corporis autem laboriosam fugiat voluptas porro id a consectetur, eos libero est aliquid voluptatem cupiditate illo. Voluptas atque, asperiores placeat magni hic blanditiis veritatis animi voluptates modi explicabo ad architecto tempora perspiciatis porro omnis deserunt sed, unde velit odio? Deleniti non nesciunt ab ex cumque voluptatum ipsum perferendis debitis dolorum id hic dolor, voluptate magnam aut, fugit obcaecati ipsa cupiditate, deserunt a libero consequatur tempore! Exercitationem harum aspernatur quo necessitatibus voluptatem repellat odio reiciendis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section main-color">
+            <div class="container">
+                <p class="heading-text ukr">
+                    О RitmStyle
+                </p>
+                <p class="heading-text eng">
+                    About RitmStyle
+                </p>
+                <div class="about-flex">
+                    <div class="about-text">
+                        <h6 class="about-text_title ukr">
+                            RitmStyle масаж 
+                        </h6>
+                        <h6 class="about-text_title eng">
+                            RitmStyle massage
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                        </p>
+                    </div>
+                    <div class="about-pictures">
+                        <img src="./img/about-pct.png" alt="">
+                    </div>
+                </div>
+                <div class="about-flex">
+                    <div  class="about-pictures">
+                        <img src="./img/about-pct.png" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h6 class="about-text_title ukr">
+                            RitmStyle гідротерапія
+                        </h6>
+                        <h6 class="about-text_title eng">
+                            RitmStyle hydrotherapy
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac viverra.
+                        </p>
+                        <p>
+                            Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus tempor at elit dui. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price-section main-color">
+            <div class="container">
+                <p class="heading-text ukr">
+                    Вартість сеансів
+                </p>
+                <p class="heading-text eng">
+                    The cost of sessions
+                </p>
+                <div class="price button-modal">
+                    <div class="price-list">
+                        <div class="price-list_elem">
+                            <p class="ukr">
+                                RitmStyle з зануренням
+                            </p>
+                            <p class="eng">
+                                RitmStyle with immersion
+                            </p>
+                            <p>
+                                500
+                            </p>
+                        </div>
+                        <div class="price-list_elem">
+                            <p class="ukr">
+                                Абонемент на RitmStyle
+                            </p>
+                            <p class="eng">
+                                RitmStyle subscription
+                            </p>
+                            <p>
+                                2200
+                            </p>
+                        </div>
+                        <div class="price-list_elem">
+                            <p class="ukr">
+                                RitmStyle для пар
+                            </p>
+                            <p class="eng">
+                                RitmStyle for couples
+                            </p>
+                            <p>
+                                3000
+                            </p>
+                        </div>
+                        <div class="price-list_elem">
+                            <p class="ukr">
+                                RitmStyle для вагітних
+                            </p>
+                            <p class="eng">
+                                RitmStyle for pregnant women
+                            </p>
+                            <p>
+                                6100
+                            </p>
+                        </div>
+                        <div class="price-list_elem">
+                            <p class="ukr">
+                                RitmStyle + фотосесія
+                            </p>
+                            <p class="eng">
+                                RitmStyle + photo shoot
+                            </p>
+                            <p>
+                                5000
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-pict">
+                            <img src="./img/price.png" alt="">
+                        </div>
+                        <p class="price-pict_text">
+                            Подарунковий сертифікат
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registration main-color">
+            <div class="container main-bth-cont">
+                <button class="button-modal button blue_button  ukr main-bth">
+                    Регистрация
+                </button>
+                <button class="button-modal button blue_button  eng main-bth">
+                    Registration
+                </button>
+            </div>
+        </section>
+        <div class="modal-bg">
+            <div class="modal-window">
+                <h1 class="heading-text ukr">
+                    Регістрація на сеанс
+                </h1>
+                <h1 class="heading-text eng">
+                    Session registration
+                </h1>
+                <form action="">
+                    <div>
+                        <label class="regist-label ukr" for="">Ім'я</label>
+                        <label class="regist-label eng" for="">Name</label>
+                        <input class="regist-input" type="text">
+                    </div>
+                    <div>
+                        <label class="regist-label ukr" for="">Номер телефону</label>
+                        <label class="regist-label eng" for="">Phone number</label>
+                        <input class="regist-input" type="text">
+                    </div>
+                    <div>
+                        <label class="regist-label ukr" for="">Email</label>
+                        <label class="regist-label eng" for="">Email</label>
+                        <input class="regist-input" type="text">
+                    </div>
+                    <select class="select" name="" id="">
+                        <option selected="selected" class="ukr" value="">
+                            Оберіть сеанс
+                        </option>
+                        <option selected="selected" class="eng" value="">
+                            Select a session
+                        </option>
+                        <option class="ukr" value="">
+                            Стандартний RitmStyle
+                        </option>
+                        <option  class="eng" value="">
+                            Standard RitmStyle
+                        </option>
+                        <option  class="ukr" value="">
+                            RitmStyle для пар
+                        </option>
+                        <option  class="eng" value="">
+                            RitmStyle for couples
+                        </option>
+                        <option  class="ukr" value="">
+                            RitmStyle з повним зануренням під воду
+                        </option>
+                        <option  class="eng" value="">
+                            RitmStyle with full immersion
+                        </option>
+                        <option class="ukr" value="">
+                            RitmStyle для вагітних
+                        </option>
+                        <option  class="eng" value="">
+                            RitmStyle for pregnant women
+                        </option>
+                        <option  class="ukr" value="">
+                            RitmStyle + барвиста підводна фотосесія
+                        </option>
+                        <option class="eng" value="">
+                            RitmStyle + colorful underwater photo shoot
+                        </option>
+                    </select>
+                    <div class="modal-buttons">
+                       <button class="button blue_button ukr" type="submit">
+                            Регістрація на сеанс
+                       </button>
+                       <button class="button blue_button eng" type="submit">
+                            Регістрація на сеанс
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
